@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Event Details</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>{{event.name}}</ion-card-title>
+  
+      <p>{{event.location}}, {{event.country}}</p>
+
+      <ion-text>{{event.time}}</ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

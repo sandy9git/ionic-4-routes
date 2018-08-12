@@ -5,6 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <ion-list>
+    <ion-item *ngFor="let event of events"
+      href="tabs/(home:event-details/{{event.id}})"
+      detail="true">
+      <ion-label>{{event.name}}</ion-label>      
+    </ion-item>
+  </ion-list>
 </ion-content>
